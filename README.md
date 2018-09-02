@@ -1,14 +1,21 @@
 # sb-api-lnd
 A lnd client for the suredbits api
 
-## Install 
+
+# Installing lnd
+
+
+  Please see the [installation instructions](https://github.com/lightningnetwork/lnd/blob/master/docs/INSTALL.md) on the lnd repo
+
+
+## Installing sb-api
 
  This uses [ln-service](https://github.com/alexbosworth/ln-service) as the bindings to lnd
  
  There is two important environment variables that need to be set to use this API
 
-  1. LND_CERT
-  2. LND_MACAROON
+  1. `LND_CERT`
+  2. `LND_MACAROON`
   
   Alex has information on how to get access to these, copying from his README
   
@@ -21,7 +28,7 @@ the LND directory. (`~/.lnd` or `~/Library/Application Support/Lnd`)
     
 Copy those values and add them to your `~/.bashrc` file or `~/.bash_profile` on MacOS. Your file should look something like this
     
-    #need for gRPC
+    #needed for gRPC
     export GRPC_SSL_CIPHER_SUITES='HIGH+ECDSA'
     
     #certificate, MAKE SURE NO EXTRA WHITE SPACE ADDED
